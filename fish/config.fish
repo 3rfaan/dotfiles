@@ -1,0 +1,30 @@
+set -U fish_greeting
+
+# Aliases
+alias q="exit"
+
+alias ls="eza -laF --icons"
+alias diff="diff --color=auto"
+alias grep="grep --color=auto"
+alias ip="ip --color=auto"
+alias cat="bat"
+
+alias vi="nvim"
+alias vim="nvim"
+
+alias glog="git log --all --decorate --graph --oneline --stat"
+
+# Environment variables
+set -Ux EDITOR nvim
+set -Ux VISUAL nvim
+set -Ux BAT_THEME gruvbox-light
+
+# Start sway at login
+if status is-login
+    if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
+        exec sway
+    end
+end
+
+starship init fish | source
+pfetch
