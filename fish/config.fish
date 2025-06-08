@@ -7,7 +7,6 @@ alias ls="eza -laF --icons"
 alias diff="diff --color=auto"
 alias grep="grep --color=auto"
 alias ip="ip --color=auto"
-alias cat="bat"
 
 alias vi="nvim"
 alias vim="nvim"

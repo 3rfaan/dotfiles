@@ -6,3 +6,6 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 
 -- Diagnostics
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics in a floating window" })
+
+-- Netrw
+vim.keymap.set("n", "<leader>ex", function() vim.cmd("Lexplore") end, { desc = "Toggle netrw with Lexplore" })
