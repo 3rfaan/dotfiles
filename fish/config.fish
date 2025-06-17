@@ -5,11 +5,11 @@ alias ls="eza -laF --icons"
 alias diff="diff --color=auto"
 alias grep="grep --color=auto"
 alias ip="ip --color=auto"
-alias glog="git log --all --decorate --graph --oneline --stat"
 
 abbr q exit
 abbr vi nvim
 abbr vim nvim
+abbr glog "git log --all --decorate --graph --oneline --stat"
 
 # Environment variables
 set -Ux EDITOR nvim
