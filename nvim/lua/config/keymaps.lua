@@ -1,3 +1,6 @@
+-- Redo
+vim.keymap.set("n", "U", "<C-r>", { noremap = true, desc = "Redo previous change" })
+
 -- Windows
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
