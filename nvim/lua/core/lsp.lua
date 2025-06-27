@@ -19,17 +19,11 @@ vim.diagnostic.config({
 vim.lsp.config("rust_analyzer", {
     settings = {
         ["rust-analyzer"] = {
-            procMacro = {
-                ignored = {
-                    leptos_macro = {
-                        "server",
-                    },
-                },
-            },
             rustfmt = {
-                overrideCommand = { "leptosfmt", "--stdin", "--rustfmt" },
-            },
-        },
+                overrideCommand = { "dx", "fmt", "--all-code", "-f", "-" },
+            }
+
+        }
     }
 })
 
@@ -38,8 +32,8 @@ vim.lsp.config("lua_ls", {
     settings = {
         Lua = {
             diagnostics = {
-                globals = { "vim", "blink" },
-            },
+                globals = { "vim", "blink" }
+            }
         }
     }
 })
