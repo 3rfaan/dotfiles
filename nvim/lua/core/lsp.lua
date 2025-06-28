@@ -19,10 +19,7 @@ vim.diagnostic.config({
 vim.lsp.config("rust_analyzer", {
     settings = {
         ["rust-analyzer"] = {
-            rustfmt = {
-                overrideCommand = { "dx", "fmt", "--all-code", "-f", "-" },
-            }
-
+            rustfmt = {}
         }
     }
 })
