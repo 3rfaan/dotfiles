@@ -1,4 +1,8 @@
 return {
+    -- Colorscheme
+    {
+        "EdenEast/nightfox.nvim",
+    },
     -- LSP
     {
         "mason-org/mason-lspconfig.nvim",
