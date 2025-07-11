@@ -7,12 +7,12 @@ return {
                 options = {
                     styles = {
                         comments = "italic",
-                        conditionals = "bold,italic",
+                        conditionals = "italic",
                         constants = "bold",
-                        functions = "bold,italic",
-                        keywords = "bold,italic",
+                        functions = "bold",
+                        keywords = "bold",
                         strings = "italic",
-                        types = "bold",
+                        types = "italic",
                     }
                 }
             })

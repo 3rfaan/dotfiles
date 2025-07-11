@@ -4,8 +4,6 @@ require("core.lsp")
 require("config.options")
 require("config.keymaps")
 
-require("plugin.nightfox")
-
 -- Globals
 vim.g.loaded_python3_provider = 0
 vim.g.loaded_ruby_provider = 0
