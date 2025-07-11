@@ -2,6 +2,21 @@ return {
     -- Colorscheme
     {
         "EdenEast/nightfox.nvim",
+        config = function()
+            require("nightfox").setup({
+                options = {
+                    styles = {
+                        comments = "italic",
+                        conditionals = "bold,italic",
+                        constants = "bold",
+                        functions = "bold,italic",
+                        keywords = "bold,italic",
+                        strings = "italic",
+                        types = "bold",
+                    }
+                }
+            })
+        end
     },
     -- LSP
     {
@@ -17,13 +32,13 @@ return {
         'nvim-treesitter/nvim-treesitter',
         build = ':TSUpdate',
         config = function()
-            require 'nvim-treesitter.configs'.setup {
+            require 'nvim-treesitter.configs'.setup({
                 ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "javascript", "html", "rust", "python" },
                 sync_install = false,
                 highlight = { enable = true },
-                indent = { enable = true },
-            }
-        end,
+                indent = { enable = true }
+            })
+        end
     },
     -- Formatter
     {
@@ -32,8 +47,8 @@ return {
             format_on_save = {
                 timeout_ms = 500,
                 lsp_format = "fallback",
-            },
-        },
+            }
+        }
     },
     -- Completion
     {
@@ -50,8 +65,8 @@ return {
             signature = { enabled = true },
             keymap = {
                 preset = "default",
-                ['<CR>'] = { 'accept', 'fallback' },
-            },
+                ['<CR>'] = { 'accept', 'fallback' }
+            }
         },
         opts_extend = { "sources.default" }
     },
@@ -85,7 +100,7 @@ return {
                     require("which-key").show({ global = false })
                 end,
                 desc = "Buffer Local Keymaps (which-key)",
-            },
-        },
-    },
+            }
+        }
+    }
 }
