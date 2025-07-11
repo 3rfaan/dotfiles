@@ -2,12 +2,12 @@ require("nightfox").setup({
     options = {
         styles = {
             comments = "italic",
-            conditionals = "bold",
+            conditionals = "bold,italic",
             constants = "bold",
-            functions = "bold",
-            keywords = "bold",
+            functions = "bold,italic",
+            keywords = "bold,italic",
             strings = "italic",
-            types = "bold,italic",
+            types = "bold",
         }
     }
 })
