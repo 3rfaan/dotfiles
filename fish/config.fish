@@ -1,9 +1,9 @@
 # Aliases
-alias diff="diff --color=auto"
-alias fzf="fzf --preview 'bat --color=always {}'"
-alias grep="grep --color=auto"
-alias ip="ip --color=auto"
-alias ls="eza -laF --icons"
+# alias -s diff="diff --color=auto"
+# alias -s fzf="fzf --preview 'bat --color=always {}'"
+# alias -s grep="grep --color=auto"
+# alias -s ip="ip --color=auto"
+# alias -s ls="eza -laF --icons"
 
 abbr c cargo
 abbr ff fastfetch
