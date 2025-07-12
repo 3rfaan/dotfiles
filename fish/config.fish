@@ -1,5 +1,3 @@
-set -U fish_greeting
-
 # Aliases
 alias diff="diff --color=auto"
 alias fzf="fzf --preview 'bat --color=always {}'"
@@ -15,9 +13,11 @@ abbr vi nvim
 abbr vim nvim
 
 # Environment variables
-set -Ux BAT_THEME GitHub
-set -Ux EDITOR nvim
-set -Ux VISUAL nvim
+set -gx BAT_THEME GitHub
+set -gx EDITOR nvim
+set -gx VISUAL nvim
+set -gx PAGER "less -RF --use-color"
+set -gx MANPAGER "less -RF --use-color"
 
 # Start sway at login
 if status is-login
