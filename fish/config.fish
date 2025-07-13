@@ -5,6 +5,7 @@
 # alias -s ip="ip --color=auto"
 # alias -s ls="eza -laF --icons"
 
+# Abbreviations
 abbr c cargo
 abbr ff fastfetch
 abbr glog "git log --all --decorate --graph --oneline --stat"
@@ -18,6 +19,8 @@ set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx PAGER "less -RF --use-color"
 set -gx MANPAGER "less -RF --use-color"
+
+set -g fish_key_bindings fish_vi_key_bindings
 
 # Start sway at login
 if status is-login
