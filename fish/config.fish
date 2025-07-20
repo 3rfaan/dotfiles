@@ -6,12 +6,20 @@
 # alias -s ls="eza -laF --icons"
 
 # Abbreviations
-abbr c cargo
-abbr ff fastfetch
-abbr glog "git log --all --decorate --graph --oneline --stat"
 abbr q exit
+
+abbr gs "git status"
+abbr gd "git diff"
+abbr glog "git log --all --decorate --graph --oneline --stat"
+
+abbr cr "cargo run"
+abbr cb "cargo build"
+abbr clippy "cargo clippy"
+
 abbr vi nvim
 abbr vim nvim
+
+abbr ff fastfetch
 
 # Environment variables
 set -gx BAT_THEME GitHub
