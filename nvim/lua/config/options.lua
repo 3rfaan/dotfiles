@@ -55,7 +55,8 @@ vim.opt.undofile = true
 vim.opt.backup = false
 vim.opt.writebackup = false
 
--- Signcolumn
+-- Column
+vim.opt.colorcolumn = "100"
 vim.opt.signcolumn = "yes"
 
 -- Colorscheme
