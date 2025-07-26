@@ -21,7 +21,7 @@ set $browser firefox
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/WinterBegins.jpg fill
+output * bg /usr/share/backgrounds/arch-minimal-breeze.png fill
 #
 # Example configuration:
 #
@@ -212,7 +212,7 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
+    position bottom
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
