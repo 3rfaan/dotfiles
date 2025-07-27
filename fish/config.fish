@@ -12,8 +12,9 @@ abbr gs "git status"
 abbr gd "git diff"
 abbr glog "git log --all --decorate --graph --oneline --stat"
 
-abbr cr "cargo run"
 abbr cb "cargo build"
+abbr cr "cargo run"
+abbr ct "cargo test"
 abbr clippy "cargo clippy"
 
 abbr vi nvim
