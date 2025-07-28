@@ -10,7 +10,7 @@ abbr q exit
 
 abbr gs "git status"
 abbr gd "git diff"
-abbr glog "git log --all --decorate --graph --oneline --stat"
+abbr gl "git log --all --decorate --graph --oneline --stat"
 
 abbr cb "cargo build"
 abbr cr "cargo run"
