@@ -1,0 +1,7 @@
+# Location: /usr/share/wayland-sessions/sway.desktop
+[Desktop Entry]
+Name=Sway
+Comment=An i3-compatible Wayland compositor
+Exec=env WLR_DRM_NO_ATOMIC=1 sway
+Type=Application
+DesktopNames=sway;wlroots
