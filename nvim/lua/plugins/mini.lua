@@ -11,6 +11,7 @@ return {
         require("mini.move").setup()
         require("mini.pairs").setup()
         require("mini.pairs").setup()
+        require("mini.pick").setup()
         require("mini.snippets").setup()
         require("mini.statusline").setup()
         require("mini.surround").setup()

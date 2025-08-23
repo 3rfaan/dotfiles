@@ -15,21 +15,12 @@ vim.diagnostic.config({
     }
 })
 
--- Rust
-vim.lsp.config("rust_analyzer", {
-    settings = {
-        ["rust-analyzer"] = {
-            rustfmt = {}
-        }
-    }
-})
-
 -- Lua
 vim.lsp.config("lua_ls", {
     settings = {
         Lua = {
             diagnostics = {
-                globals = { "vim", "MiniIcons" }
+                globals = { "vim", "MiniIcons", "MiniPick" }
             }
         }
     }
