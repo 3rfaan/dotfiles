@@ -10,8 +10,8 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- Diagnostics
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics in a floating window" })
 
--- Netrw
-vim.keymap.set("n", "<leader>nt", function() vim.cmd("Lexplore") end, { desc = "Toggle netrw with Lexplore" })
+-- Filetree
+vim.keymap.set("n", "<leader>t", function() require("mini.files").open() end, { desc = "Open MiniFiles file tree" })
 
 -- Telescope
 local builtin = require('telescope.builtin')
