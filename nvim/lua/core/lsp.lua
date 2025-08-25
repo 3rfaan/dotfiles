@@ -25,3 +25,12 @@ vim.lsp.config("lua_ls", {
         }
     }
 })
+
+-- Go
+vim.lsp.config("gopls", {
+    settings = {
+        gopls = {
+            semanticTokens = false
+        }
+    }
+})
