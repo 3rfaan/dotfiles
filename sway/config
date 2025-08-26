@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Applications
-set $term foot
+set $term ghostty
 set $menu wmenu-run
 set $browser firefox
 
