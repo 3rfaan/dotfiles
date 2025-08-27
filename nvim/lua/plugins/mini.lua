@@ -3,7 +3,6 @@ return {
     "echasnovski/mini.nvim",
     version = false,
     config = function()
-        require("mini.animate").setup()
         require("mini.completion").setup()
         require("mini.diff").setup()
         require("mini.files").setup()

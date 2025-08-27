@@ -6,6 +6,8 @@ return {
         require 'nvim-treesitter.configs'.setup({
             ensure_installed = {
                 "c",
+                "css",
+                "fish",
                 "go",
                 "html",
                 "javascript",
