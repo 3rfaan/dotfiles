@@ -12,7 +12,6 @@ return {
         require("mini.pairs").setup()
         require("mini.pairs").setup()
         require("mini.pick").setup()
-        require("mini.snippets").setup()
         require("mini.statusline").setup()
         require("mini.surround").setup()
         require("mini.tabline").setup()
@@ -30,6 +29,17 @@ return {
                 line_up = '<C-k>'
             }
         })
+
+
+        require("mini.snippets").setup({
+            mappings = {
+                expand = '<leader>se',
+                jump_next = '<leader>sn',
+                jump_prev = '<leader>sp',
+                stop = '<leader>ss',
+            },
+        })
+
         -- Enables icons in completion popups
         MiniIcons.tweak_lsp_kind()
     end,
