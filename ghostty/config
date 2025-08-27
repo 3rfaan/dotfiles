@@ -1,0 +1,15 @@
+# Theme
+theme = dark:duskfox,light:dayfox
+
+# Font
+font-family = CaskaydiaCove Nerd Font
+font-size = 16
+font-style = SemiBold
+
+# Mouse
+mouse-hide-while-typing
+
+# Keybindings
+keybind = ctrl+comma=increase_font_size:1
+keybind = ctrl+minus=decrease_font_size:1
+keybind = ctrl+zero=reset_font_size
