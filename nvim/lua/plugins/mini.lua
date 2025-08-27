@@ -33,10 +33,9 @@ return {
 
         require("mini.snippets").setup({
             mappings = {
-                expand = '<leader>se',
                 jump_next = '<leader>sn',
                 jump_prev = '<leader>sp',
-                stop = '<leader>ss',
+                stop = '<leader>sx',
             },
         })
 
