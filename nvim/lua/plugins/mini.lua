@@ -30,8 +30,12 @@ return {
             }
         })
 
-
-        require("mini.snippets").setup({
+        local gen_loader = require('mini.snippets').gen_loader
+        require('mini.snippets').setup({
+            snippets = {
+                gen_loader.from_file('~/.config/nvim/snippets/global.json'),
+                gen_loader.from_lang(),
+            },
             mappings = {
                 jump_next = '<leader>sn',
                 jump_prev = '<leader>sp',
