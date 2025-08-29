@@ -12,36 +12,10 @@ return {
         require("mini.pairs").setup()
         require("mini.pairs").setup()
         require("mini.pick").setup()
+        require("mini.snippets").setup()
         require("mini.statusline").setup()
         require("mini.surround").setup()
         require("mini.tabline").setup()
-
-        require("mini.move").setup({
-            mappings = {
-                left = '<C-h>',
-                right = '<C-l>',
-                down = '<C-j>',
-                up = '<C-k>',
-
-                line_left = '<C-h>',
-                line_right = '<C-l>',
-                line_down = '<C-j>',
-                line_up = '<C-k>'
-            }
-        })
-
-        local gen_loader = require('mini.snippets').gen_loader
-        require('mini.snippets').setup({
-            snippets = {
-                gen_loader.from_file('~/.config/nvim/snippets/global.json'),
-                gen_loader.from_lang(),
-            },
-            mappings = {
-                jump_next = '<leader>sn',
-                jump_prev = '<leader>sp',
-                stop = '<leader>sx',
-            },
-        })
 
         -- Enables icons in completion popups
         MiniIcons.tweak_lsp_kind()
