@@ -18,3 +18,11 @@ vim.keymap.set('n', '<leader>ff', function() MiniPick.builtin.files() end, { des
 vim.keymap.set('n', '<leader>fg', function() MiniPick.builtin.grep_live() end, { desc = 'Live grep' })
 vim.keymap.set('n', '<leader>fb', function() MiniPick.builtin.buffers() end, { desc = 'Find buffers' })
 vim.keymap.set('n', '<leader>fh', function() MiniPick.builtin.help() end, { desc = 'Find help tags' })
+
+-- mini.completion
+_G.cr_action = function()
+    if vim.fn.complete_info()['selected'] ~= -1 then return '\25' end
+    return '\r'
+end
+
+vim.keymap.set('i', '<CR>', 'v:lua.cr_action()', { expr = true })
