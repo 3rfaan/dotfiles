@@ -20,7 +20,7 @@ vim.lsp.config("lua_ls", {
     settings = {
         Lua = {
             diagnostics = {
-                globals = { "vim", "MiniIcons", "MiniPick" }
+                globals = { "vim", "MiniIcons", "MiniPick", "MiniPairs" }
             }
         }
     }

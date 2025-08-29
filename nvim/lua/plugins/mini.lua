@@ -3,6 +3,7 @@ return {
     "echasnovski/mini.nvim",
     version = false,
     config = function()
+        require("mini.completion").setup()
         require("mini.diff").setup()
         require("mini.files").setup()
         require("mini.git").setup()
@@ -15,10 +16,6 @@ return {
         require("mini.statusline").setup()
         require("mini.surround").setup()
         require("mini.tabline").setup()
-
-        require("mini.completion").setup({
-            confirm = "<CR>"
-        })
 
         -- Enables icons in completion popups
         MiniIcons.tweak_lsp_kind()
