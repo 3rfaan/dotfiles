@@ -2,7 +2,10 @@
 vim.opt.termguicolors = true
 vim.opt.encoding = "UTF-8"
 vim.opt.clipboard = "unnamedplus"
+
+-- Mouse
 vim.opt.mouse = "a"
+vim.opt.mousescroll = "ver:1"
 
 -- Lines
 vim.opt.number = true
