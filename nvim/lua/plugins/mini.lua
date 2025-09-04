@@ -17,6 +17,13 @@ return {
         require("mini.surround").setup()
         require("mini.tabline").setup()
 
+        require("mini.animate").setup({
+            cursor = { enable = false },
+            resize = { enable = false },
+            open = { enable = false },
+            close = { enable = false },
+        })
+
         -- Enables icons in completion popups
         MiniIcons.tweak_lsp_kind()
     end,
