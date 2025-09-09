@@ -25,3 +25,11 @@ vim.lsp.config("lua_ls", {
         }
     }
 })
+
+-- C
+vim.lsp.config("clangd", {
+    cmd = {
+        "clangd",
+        "--fallback-style=webkit"
+    }
+})
