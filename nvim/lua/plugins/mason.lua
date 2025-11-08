@@ -10,7 +10,7 @@ return {
             "lua_ls",
             "rust_analyzer",
             "svelte",
-            "taplo",
+            "tombi",
             "ts_ls",
         }
     },
