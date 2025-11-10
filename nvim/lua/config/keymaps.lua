@@ -14,15 +14,15 @@ vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagn
 vim.keymap.set("n", "<leader>t", function() require("mini.files").open() end, { desc = "Open MiniFiles file tree" })
 
 -- mini.pick
-vim.keymap.set('n', '<leader>ff', function() MiniPick.builtin.files() end, { desc = 'Find files' })
-vim.keymap.set('n', '<leader>fg', function() MiniPick.builtin.grep_live() end, { desc = 'Live grep' })
-vim.keymap.set('n', '<leader>fb', function() MiniPick.builtin.buffers() end, { desc = 'Find buffers' })
-vim.keymap.set('n', '<leader>fh', function() MiniPick.builtin.help() end, { desc = 'Find help tags' })
+vim.keymap.set("n", "<leader>ff", function() MiniPick.builtin.files() end, { desc = "Find files" })
+vim.keymap.set("n", "<leader>fg", function() MiniPick.builtin.grep_live() end, { desc = "Live grep" })
+vim.keymap.set("n", "<leader>fb", function() MiniPick.builtin.buffers() end, { desc = "Find buffers" })
+vim.keymap.set("n", "<leader>fh", function() MiniPick.builtin.help() end, { desc = "Find help tags" })
 
 -- mini.completion
 _G.cr_action = function()
-    if vim.fn.complete_info()['selected'] ~= -1 then return '\25' end
+    if vim.fn.complete_info()["selected"] ~= -1 then return "\25" end
     return MiniPairs.cr()
 end
 
-vim.keymap.set('i', '<CR>', 'v:lua.cr_action()', { expr = true })
+vim.keymap.set("i", "<CR>", "v:lua.cr_action()", { expr = true })
