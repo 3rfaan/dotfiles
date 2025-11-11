@@ -26,6 +26,17 @@ vim.lsp.config("lua_ls", {
     }
 })
 
+-- Rust
+vim.lsp.config("rust_analyzer", {
+    settings = {
+        ["rust-analyzer"] = {
+            rustfmt = {
+                overrideCommand = { "sh", "-c", "rustfmt --edition 2024 --emit stdout | dx fmt -f -" },
+            }
+        }
+    }
+})
+
 -- C
 vim.lsp.config("clangd", {
     cmd = {
