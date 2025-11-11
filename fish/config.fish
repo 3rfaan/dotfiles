@@ -30,8 +30,11 @@ set -gx BAT_THEME GitHub
 set -gx TERM tmux-256color
 set -gx EDITOR nvim
 set -gx VISUAL nvim
-set -gx PAGER "less -RF --use-color"
+set -gx PAGER "less -RFX --use-color"
 set -gx MANPAGER "less -RF --use-color"
 
+set -x DISPLAY :0
+
+# Autostart
 starship init fish | source
 pfetch
