@@ -10,7 +10,6 @@ return {
         require("mini.icons").setup()
         require("mini.jump").setup()
         require("mini.pairs").setup()
-        require("mini.pairs").setup()
         require("mini.pick").setup()
         require("mini.snippets").setup()
         require("mini.statusline").setup()
