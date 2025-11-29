@@ -24,6 +24,7 @@ abbr vi nvim
 abbr vim nvim
 
 abbr ff fastfetch
+abbr lg lazygit
 
 # Environment variables
 set -gx EDITOR nvim
@@ -32,6 +33,7 @@ set -gx BAT_THEME "Catppuccin Frappe"
 
 # Autostart
 starship init fish | source
+pfetch
 
 # Load Homebrew environment
 eval (/opt/homebrew/bin/brew shellenv)
