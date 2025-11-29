@@ -1,3 +1,3 @@
-function diff --description 'alias diff=diff --color=auto'
+function diff --description 'Colorized diff command'
     command diff --color=auto $argv
 end

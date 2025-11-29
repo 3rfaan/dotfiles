@@ -1,3 +1,3 @@
-function ip --description 'alias ip=ip --color=auto'
+function ip --description 'Colorized ip command'
     command ip --color=auto $argv
 end
