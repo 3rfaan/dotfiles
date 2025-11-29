@@ -1,18 +1,15 @@
 # Theme
-theme = dark:duskfox,light:dayfox
+theme = Nightfox
 
 # Font
 font-family = CaskaydiaCove Nerd Font
-font-size = 16
-font-style = SemiBold
+font-size = 14
 
 # Mouse
 mouse-hide-while-typing
 
-# Keybindings
-keybind = ctrl+comma=increase_font_size:1
-keybind = ctrl+minus=decrease_font_size:1
-keybind = ctrl+zero=reset_font_size
-
 # $TERM environment variable
 term = tmux-256color
+
+# Shaders
+custom-shader = shaders/cursor_warp.glsl
