@@ -1,5 +1,5 @@
 # Theme
-theme = Nightfox
+theme = Duskfox
 
 # Font
 font-family = CaskaydiaCove Nerd Font
@@ -13,3 +13,6 @@ term = tmux-256color
 
 # Shaders
 custom-shader = shaders/cursor_warp.glsl
+
+# Treat option key as alt key on MacOS
+macos-option-as-alt = left
