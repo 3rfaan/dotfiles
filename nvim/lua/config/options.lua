@@ -11,8 +11,10 @@ vim.opt.mousescroll = "ver:1"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.wrap = true
-vim.opt.breakindent = true
 vim.opt.list = true
+vim.opt.breakindent = true
+vim.opt.smartindent = true
+vim.opt.autoindent = true
 
 -- Cursor
 vim.opt.cursorline = true
