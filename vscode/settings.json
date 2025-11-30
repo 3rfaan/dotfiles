@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "Duskfox",
+    "editor.fontSize": 15,
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.mouseWheelZoom": true,
+    "editor.wordWrap": "on",
+    "editor.autoIndentOnPaste": true,
+    "editor.cursorBlinking": "expand",
+    "editor.fontLigatures": true,
+    "editor.lineNumbers": "relative",
+    "terminal.integrated.mouseWheelZoom": true,
+    "terminal.integrated.fontSize": 15
+}
