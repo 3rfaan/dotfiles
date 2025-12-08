@@ -31,9 +31,9 @@ set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx BAT_THEME "Catppuccin Frappe"
 
+# Load Homebrew environment
+eval (/opt/homebrew/bin/brew shellenv)
+
 # Autostart
 starship init fish | source
 pfetch
-
-# Load Homebrew environment
-eval (/opt/homebrew/bin/brew shellenv)
