@@ -5,6 +5,10 @@ theme = Nightfox
 window-height = 30
 window-width = 110
 
+# Background
+background-opacity = 0.9
+background-blur = true
+
 # Font
 font-family = CaskaydiaCove Nerd Font
 font-size = 20
