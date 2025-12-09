@@ -1,9 +1,13 @@
 # Theme
-theme = Duskfox
+theme = Nightfox
+
+# Initial window size
+window-height = 30
+window-width = 110
 
 # Font
 font-family = CaskaydiaCove Nerd Font
-font-size = 14
+font-size = 20
 
 # Mouse
 mouse-hide-while-typing
