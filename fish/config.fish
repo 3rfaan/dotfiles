@@ -23,6 +23,7 @@ abbr clippy "cargo clippy"
 abbr vi nvim
 abbr vim nvim
 
+abbr tm tmux
 abbr ff fastfetch
 abbr lg lazygit
 
