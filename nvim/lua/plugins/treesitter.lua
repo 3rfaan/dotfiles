@@ -14,7 +14,9 @@ return {
                 "lua",
                 "python",
                 "query",
-                "rust"
+                "rust",
+                "svelte",
+                "typescript",
             },
 
             sync_install = false,
