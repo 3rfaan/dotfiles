@@ -20,4 +20,4 @@ vim.g.markdown_fenced_languages = {
 }
 
 -- COMMANDS
-vim.cmd("colorscheme dayfox")
+vim.cmd("colorscheme nightfox")
