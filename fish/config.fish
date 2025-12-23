@@ -1,10 +1,3 @@
-# Aliases
-# alias -s diff="diff --color=auto"
-# alias -s fzf="fzf --preview 'bat --color=always {}'"
-# alias -s grep="grep --color=auto"
-# alias -s ip="ip --color=auto"
-# alias -s ls="eza -laF --icons"
-
 # Use VIM keybindings
 set -g fish_key_bindings fish_vi_key_bindings
 
