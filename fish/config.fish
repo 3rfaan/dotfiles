@@ -23,6 +23,7 @@ abbr lg lazygit
 # Environment variables
 set -gx EDITOR nvim
 set -gx VISUAL nvim
+set -gx PAGER less
 set -gx BAT_THEME "Catppuccin Frappe"
 
 # Load Homebrew environment
