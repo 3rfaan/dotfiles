@@ -6,4 +6,4 @@ require("config.keymaps")
 require("config.options")
 
 -- COMMANDS
-vim.cmd("colorscheme nightfox")
+vim.cmd("colorscheme dayfox")
