@@ -31,4 +31,3 @@ eval (/opt/homebrew/bin/brew shellenv)
 
 # Autostart
 starship init fish | source
-pfetch
