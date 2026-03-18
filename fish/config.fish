@@ -24,10 +24,10 @@ abbr lg lazygit
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx PAGER less
-set -gx BAT_THEME "Catppuccin Frappe"
+set -gx BAT_THEME "Catppuccin Latte"
 
 # Load Homebrew environment
-eval (/opt/homebrew/bin/brew shellenv)
+#eval (/opt/homebrew/bin/brew shellenv)
 
 # Autostart
 starship init fish | source
