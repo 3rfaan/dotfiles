@@ -14,6 +14,13 @@ vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
 -- Diagnostics
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics in a floating window" })
 
+-- Live Server
+vim.keymap.set('n', '<leader>ls', '<Plug>(live-server-start)')
+vim.keymap.set('n', '<leader>lx', '<Plug>(live-server-stop)')
+vim.keymap.set('n', '<leader>lt', '<Plug>(live-server-toggle)')
+
+-- MINI KEYMAPS
+
 -- mini.files
 vim.keymap.set("n", "<leader>t", function() require("mini.files").open() end, { desc = "Open MiniFiles file tree" })
 
