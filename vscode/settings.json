@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Duskfox",
     // Editor
     "editor.fontSize": 15,
     "editor.fontFamily": "'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
@@ -17,6 +16,7 @@
     "terminal.integrated.stickyScroll.enabled": false,
     // Color theme based on system color mode
     "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Duskfox",
     "workbench.preferredDarkColorTheme": "Duskfox",
     "workbench.preferredLightColorTheme": "Dayfox"
 }
