@@ -1,12 +1,12 @@
 # Theme
-theme = Nightfox
+theme = dark:Duskfox,light:Dayfox
 
 # Initial window size
-window-height = 30
-window-width = 110
+window-height = 45
+window-width = 150
 
 # Background
-background-opacity = 0.9
+background-opacity = 0.95
 background-blur = true
 
 # Font
