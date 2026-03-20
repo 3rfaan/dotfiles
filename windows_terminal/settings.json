@@ -1,0 +1,114 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{102b349f-883e-56ff-97a0-190eeda030cd}",
+    "keybindings": [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "newTabMenu": [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": {
+        "defaults": {
+            "colorScheme": {
+                "dark": "duskfox",
+                "light": "dayfox"
+            },
+        },
+        "list": [
+            {
+                "guid": "{102b349f-883e-56ff-97a0-190eeda030cd}",
+                "hidden": false,
+                "name": "archlinux",
+                "source": "Microsoft.WSL",
+                "font": {
+                    "face": "CaskaydiaCove Nerd Font"
+                }
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": true,
+                "name": "Eingabeaufforderung"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+    "schemes": [
+        {
+            "name": "dayfox",
+            "background": "#F6F2EE",
+            "black": "#352C24",
+            "blue": "#2848A9",
+            "brightBlack": "#534C45",
+            "brightBlue": "#4863B6",
+            "brightCyan": "#488D93",
+            "brightGreen": "#577F63",
+            "brightPurple": "#8452D5",
+            "brightRed": "#B3434E",
+            "brightWhite": "#F4ECE6",
+            "brightYellow": "#B86E28",
+            "cursorColor": "#3D2B5A",
+            "cyan": "#287980",
+            "foreground": "#3D2B5A",
+            "green": "#396847",
+            "purple": "#6E33CE",
+            "red": "#A5222F",
+            "selectionBackground": "#E7D2BE",
+            "white": "#F2E9E1",
+            "yellow": "#AC5402"
+        },
+        {
+            "name": "duskfox",
+            "background": "#232136",
+            "foreground": "#e0def4",
+            "cursorColor": "#e0def4",
+            "selectionBackground": "#433c59",
+            "black": "#393552",
+            "blue": "#569fba",
+            "cyan": "#9ccfd8",
+            "green": "#a3be8c",
+            "purple": "#c4a7e7",
+            "red": "#eb6f92",
+            "white": "#e0def4",
+            "yellow": "#f6c177",
+            "brightBlack": "#47407d",
+            "brightBlue": "#65b1cd",
+            "brightCyan": "#a6dae3",
+            "brightGreen": "#b1d196",
+            "brightPurple": "#ccb1ed",
+            "brightRed": "#f083a2",
+            "brightWhite": "#e2e0f7",
+            "brightYellow": "#f9cb8c"
+        }
+    ],
+    "theme": "system",
+    "themes": []
+}
