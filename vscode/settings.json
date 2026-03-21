@@ -1,5 +1,4 @@
 {
-    // Editor
     "editor.fontSize": 15,
     "editor.fontFamily": "'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
     "editor.formatOnPaste": true,
@@ -10,13 +9,15 @@
     "editor.cursorBlinking": "expand",
     "editor.fontLigatures": true,
     "editor.lineNumbers": "relative",
-    // Terminal
+    //
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.mouseWheelZoom": true,
     "terminal.integrated.stickyScroll.enabled": false,
-    // Color theme based on system color mode
+    "terminal.integrated.initialHint": false,
+    //
     "window.autoDetectColorScheme": true,
     "workbench.colorTheme": "Duskfox",
     "workbench.preferredDarkColorTheme": "Duskfox",
-    "workbench.preferredLightColorTheme": "Dayfox"
+    "workbench.preferredLightColorTheme": "Dayfox",
+    "workbench.startupEditor": "none",
 }
