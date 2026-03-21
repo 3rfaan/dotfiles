@@ -63,6 +63,3 @@ vim.opt.writebackup = false
 -- Column
 vim.opt.colorcolumn = "100"
 vim.opt.signcolumn = "yes"
-
--- runtimepath
-vim.opt.runtimepath:append("/Users/arfanzubi/.local/share/nvim/site/")
