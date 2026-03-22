@@ -6,7 +6,8 @@ abbr q exit
 
 abbr gs "git status --short"
 abbr gd "git diff"
-abbr gl "git log --all --decorate --graph --oneline --stat"
+abbr gl "git log --graph --oneline --stat"
+abbr gp "git log --patch --relative-date"
 
 abbr cb "cargo build"
 abbr cr "cargo run --quiet"
