@@ -9,7 +9,7 @@ abbr gd "git diff"
 abbr gl "git log --all --decorate --graph --oneline --stat"
 
 abbr cb "cargo build"
-abbr cr "cargo run"
+abbr cr "cargo run --quiet"
 abbr ct "cargo test"
 abbr clippy "cargo clippy"
 
