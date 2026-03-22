@@ -5,6 +5,7 @@ return {
         ensure_installed = {
             "clangd",
             "cssls",
+            "emmet_language_server",
             "html",
             "jsonls",
             "lua_ls",
