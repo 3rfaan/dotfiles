@@ -19,11 +19,13 @@ return {
             "html",
             "javascript",
             "lua",
+            "markdown",
             "python",
             "query",
             "rust",
             "svelte",
             "typescript",
+            "vimdoc"
         })
 
         -- Highlighting
