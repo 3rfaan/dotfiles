@@ -4,12 +4,12 @@ set -g fish_key_bindings fish_vi_key_bindings
 # Abbreviations
 abbr q exit
 
-abbr gs "git status"
+abbr gs "git status --short"
 abbr gd "git diff"
 abbr gl "git log --all --decorate --graph --oneline --stat"
 
 abbr cb "cargo build"
-abbr cr "cargo run --quiet"
+abbr cr "cargo run"
 abbr ct "cargo test"
 abbr clippy "cargo clippy"
 
@@ -27,7 +27,7 @@ set -gx PAGER less
 set -gx BAT_THEME "Catppuccin Latte"
 
 # Load Homebrew environment
-#eval (/opt/homebrew/bin/brew shellenv)
+eval (/opt/homebrew/bin/brew shellenv)
 
 # Autostart
 starship init fish | source
