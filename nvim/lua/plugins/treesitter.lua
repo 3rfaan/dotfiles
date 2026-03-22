@@ -6,9 +6,7 @@ return {
     config = function()
         local treesitter = require("nvim-treesitter")
 
-        treesitter.setup({
-            install_dir = vim.fn.stdpath('data') .. '/site'
-        })
+        treesitter.setup()
 
         -- Ensure Installed
         treesitter.install({
@@ -25,7 +23,6 @@ return {
             "rust",
             "svelte",
             "typescript",
-            "vimdoc"
         })
 
         -- Highlighting
