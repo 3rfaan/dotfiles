@@ -2,11 +2,14 @@
   "editor.fontSize": 15,
   "editor.fontFamily": "'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode",
   },
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+  },
   "editor.mouseWheelZoom": true,
   "editor.wordWrap": "on",
   "editor.autoIndentOnPaste": true,
@@ -21,8 +24,8 @@
 
   "window.autoDetectColorScheme": true,
   "workbench.colorTheme": "Duskfox",
-  "workbench.preferredDarkColorTheme": "Nightfox",
-  "workbench.preferredLightColorTheme": "Duskfox",
+  "workbench.preferredLightColorTheme": "Dayfox",
+  "workbench.preferredDarkColorTheme": "Duskfox",
   "workbench.startupEditor": "none",
 
   "svelte.enable-ts-plugin": true,
