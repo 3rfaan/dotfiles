@@ -1,6 +1,7 @@
 {
   "editor.fontSize": 15,
-  "editor.fontFamily": "'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Iosevka Nerd Font', 'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -10,6 +11,7 @@
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma",
   },
+
   "editor.mouseWheelZoom": true,
   "editor.wordWrap": "on",
   "editor.autoIndentOnPaste": true,
