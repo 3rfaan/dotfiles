@@ -1,0 +1,32 @@
+-- Builtin plugins
+vim.cmd("packadd nvim.undotree")
+vim.cmd("packadd nvim.difftool")
+
+-- External plugins
+vim.pack.add({
+  -- Nightfox colorscheme
+  "https://github.com/edeneast/nightfox.nvim",
+
+  -- LSP-Config
+  "https://github.com/neovim/nvim-lspconfig",
+
+  -- Oil
+  "https://github.com/stevearc/oil.nvim",
+
+  -- Mini
+  "https://github.com/nvim-mini/mini.nvim",
+
+  -- auto-dark-mode
+  "https://github.com/f-person/auto-dark-mode.nvim",
+})
+
+require("oil").setup()
+
+require("mini.diff").setup()
+require("mini.git").setup()
+require("mini.git").setup()
+require("mini.icons").setup()
+require("mini.pairs").setup()
+require("mini.snippets").setup()
+require("mini.statusline").setup()
+require("mini.surround").setup()

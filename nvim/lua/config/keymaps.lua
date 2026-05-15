@@ -1,39 +1,11 @@
--- Redo
-vim.keymap.set("n", "U", "<C-r>", { noremap = true, desc = "Redo previous change" })
+-- Search
+vim.keymap.set("n", "<Esc>", vim.cmd.nohlsearch, { desc = "Clear search highlight" })
+
+-- Diagnostics
+vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostic message" })
 
 -- Focus windows
 vim.keymap.set("n", "<leader>h", "<C-w><C-h>", { desc = "Move focus to the left window" })
 vim.keymap.set("n", "<leader>l", "<C-w><C-l>", { desc = "Move focus to the right window" })
 vim.keymap.set("n", "<leader>j", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<leader>k", "<C-w><C-k>", { desc = "Move focus to the upper window" })
-
--- LSP
-vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to Declaration" })
-vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
-
--- Diagnostics
-vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics in a floating window" })
-
--- Live Server
-vim.keymap.set('n', '<leader>ls', '<Plug>(live-server-start)')
-vim.keymap.set('n', '<leader>lx', '<Plug>(live-server-stop)')
-vim.keymap.set('n', '<leader>lt', '<Plug>(live-server-toggle)')
-
--- MINI KEYMAPS
-
--- mini.files
-vim.keymap.set("n", "<leader>t", function() require("mini.files").open() end, { desc = "Open MiniFiles file tree" })
-
--- mini.pick
-vim.keymap.set("n", "<leader>ff", function() MiniPick.builtin.files() end, { desc = "Find files" })
-vim.keymap.set("n", "<leader>fg", function() MiniPick.builtin.grep_live() end, { desc = "Live grep" })
-vim.keymap.set("n", "<leader>fb", function() MiniPick.builtin.buffers() end, { desc = "Find buffers" })
-vim.keymap.set("n", "<leader>fh", function() MiniPick.builtin.help() end, { desc = "Find help tags" })
-
--- mini.completion
-_G.cr_action = function()
-    if vim.fn.complete_info()["selected"] ~= -1 then return "\25" end
-    return MiniPairs.cr()
-end
-
-vim.keymap.set("i", "<CR>", "v:lua.cr_action()", { expr = true })
