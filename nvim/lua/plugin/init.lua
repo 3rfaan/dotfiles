@@ -10,9 +10,6 @@ vim.pack.add({
   -- LSP-Config
   "https://github.com/neovim/nvim-lspconfig",
 
-  -- Oil
-  "https://github.com/stevearc/oil.nvim",
-
   -- Mini
   "https://github.com/nvim-mini/mini.nvim",
 
@@ -20,10 +17,8 @@ vim.pack.add({
   "https://github.com/f-person/auto-dark-mode.nvim",
 })
 
-require("oil").setup()
-
-require("mini.diff").setup()
-require("mini.git").setup()
+require("mini.diff").setup({ view = { style = "sign" } })
+require("mini.files").setup()
 require("mini.git").setup()
 require("mini.icons").setup()
 require("mini.pairs").setup()
