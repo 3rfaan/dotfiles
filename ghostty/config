@@ -2,16 +2,17 @@
 theme = dark:Duskfox,light:Dayfox
 
 # Initial window size
-window-height = 45
-window-width = 150
+window-height = 25
+window-width = 120
 
 # Background
 background-opacity = 0.95
 background-blur = true
 
 # Font
-font-family = CaskaydiaCove Nerd Font
-font-size = 20
+# font-family = CaskaydiaCove Nerd Font 
+font-family = Iosevka Nerd Font
+font-size = 21
 
 # Mouse
 mouse-hide-while-typing
@@ -23,4 +24,4 @@ term = tmux-256color
 custom-shader = shaders/cursor_warp.glsl
 
 # Treat option key as alt key on MacOS
-macos-option-as-alt = left
+macos-option-as-alt = false
