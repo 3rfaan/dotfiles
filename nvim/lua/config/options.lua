@@ -50,7 +50,7 @@ vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
 -- Pum
 vim.opt.pumblend = 15
-vim.opt.pumheight = 5
+vim.opt.pumheight = 10
 
 -- History
 vim.opt.history = 1000
