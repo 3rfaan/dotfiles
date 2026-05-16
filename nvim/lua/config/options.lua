@@ -17,9 +17,7 @@ vim.opt.sidescrolloff = 10
 
 -- Text
 vim.opt.list = true
-vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
-vim.opt.softtabstop = 2
 vim.opt.wrap = false
 
 -- Column
@@ -29,6 +27,7 @@ vim.opt.signcolumn = "yes"
 -- Tab
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
 vim.opt.tabstop = 2
 
 -- Search

@@ -2,7 +2,7 @@ return {
   settings = {
     Lua = {
       diagnostics = {
-        globals = { "vim", "MiniFiles", "MiniPairs", "MiniPick" }
+        globals = { "vim", "MiniDiff", "MiniFiles", "MiniPairs", "MiniPick" }
       }
     }
   }
