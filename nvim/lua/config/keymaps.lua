@@ -19,7 +19,7 @@ vim.keymap.set("i", "<CR>", function()
   local info = vim.fn.complete_info({ "selected" })
 
   if info.selected ~= -1 then return "<C-y>" end
-  return "<C-e><CR>"
+  return MiniPairs.cr()
 end, { expr = true })
 
 -- MiniFiles
