@@ -10,9 +10,12 @@ background-opacity = 0.95
 background-blur = true
 
 # Font
+font-family = JetBrainsMono Nerd Font
 # font-family = CaskaydiaCove Nerd Font 
-font-family = Iosevka Nerd Font
-font-size = 21
+# font-family = Iosevka Nerd Font
+
+font-size = 20
+font-style = SemiBold
 
 # Mouse
 mouse-hide-while-typing
