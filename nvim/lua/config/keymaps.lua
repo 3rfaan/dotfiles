@@ -14,5 +14,19 @@ vim.keymap.set("n", "<leader>k", "<C-w><C-k>", { desc = "Move focus to the upper
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 
+-- Autocomplete
+vim.keymap.set("i", "<CR>", function()
+  local info = vim.fn.complete_info({ "selected" })
+
+  if info.selected ~= -1 then return "<C-y>" end
+  return "<C-e><CR>"
+end, { expr = true })
+
 -- MiniFiles
 vim.keymap.set("n", "<leader>-", function() MiniFiles.open() end, { desc = "Open MiniFiles" })
+
+-- MiniPick
+vim.keymap.set("n", "<leader>ff", function() MiniPick.builtin.files() end, { desc = "Find files" })
+vim.keymap.set("n", "<leader>fg", function() MiniPick.builtin.grep_live() end, { desc = "Live grep" })
+vim.keymap.set("n", "<leader>fb", function() MiniPick.builtin.buffers() end, { desc = "Find buffers" })
+vim.keymap.set("n", "<leader>fh", function() MiniPick.builtin.help() end, { desc = "Find help tags" })
