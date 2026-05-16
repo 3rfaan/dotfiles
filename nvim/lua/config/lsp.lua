@@ -1,7 +1,9 @@
 vim.lsp.enable({
   "clangd",
+  "emmet_language_server",
   "lua_ls",
   "rust_analyzer",
   "svelte",
   "ts_ls",
+  "vimdoc_ls",
 })

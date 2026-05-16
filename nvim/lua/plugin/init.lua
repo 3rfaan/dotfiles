@@ -15,6 +15,9 @@ vim.pack.add({
 
   -- auto-dark-mode
   "https://github.com/f-person/auto-dark-mode.nvim",
+
+  -- LazyDev
+  "https://github.com/folke/lazydev.nvim",
 })
 
 require("mini.diff").setup({ view = { style = "sign" } })
@@ -26,3 +29,5 @@ require("mini.pick").setup()
 require("mini.snippets").setup()
 require("mini.statusline").setup()
 require("mini.surround").setup()
+
+require("lazydev").setup()
