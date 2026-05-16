@@ -1,6 +1,6 @@
 {
-  "editor.fontSize": 15,
-  "editor.fontFamily": "'Iosevka Nerd Font', 'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Iosevka Nerd Font', 'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
@@ -29,7 +29,8 @@
   "workbench.preferredLightColorTheme": "Dayfox",
   "workbench.preferredDarkColorTheme": "Duskfox",
   "workbench.startupEditor": "none",
+  "workbench.iconTheme": "file-icons",
 
-  "svelte.enable-ts-plugin": true,
   "vim.useSystemClipboard": true,
+  "svelte.enable-ts-plugin": true,
 }
