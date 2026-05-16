@@ -22,6 +22,11 @@ vim.keymap.set("i", "<CR>", function()
   return MiniPairs.cr()
 end, { expr = true })
 
+-- Undotree
+vim.keymap.set("n", "<leader>u", function()
+  require("undotree").open()
+end, { desc = "Open Undotree" })
+
 -- MiniFiles
 vim.keymap.set("n", "<leader>-", function() MiniFiles.open() end, { desc = "Open MiniFiles" })
 
