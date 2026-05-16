@@ -20,6 +20,10 @@ vim.pack.add({
   "https://github.com/folke/lazydev.nvim",
 })
 
+require("plugin.auto-dark-mode")
+require("plugin.miniclue")
+require("plugin.nightfox")
+
 require("mini.diff").setup({ view = { style = "sign" } })
 require("mini.files").setup()
 require("mini.git").setup()

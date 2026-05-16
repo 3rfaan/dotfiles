@@ -2,7 +2,7 @@
 vim.keymap.set("n", "<Esc>", vim.cmd.nohlsearch, { desc = "Clear search highlight" })
 
 -- Diagnostics
-vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostic message" })
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic message" })
 
 -- Focus windows
 vim.keymap.set("n", "<leader>h", "<C-w><C-h>", { desc = "Move focus to the left window" })
@@ -29,6 +29,9 @@ end, { desc = "Open Undotree" })
 
 -- MiniFiles
 vim.keymap.set("n", "<leader>-", function() MiniFiles.open() end, { desc = "Open MiniFiles" })
+
+-- MiniDiff
+vim.keymap.set("n", "<leader>d", function() MiniDiff.toggle_overlay() end, { desc = "Show diff details" })
 
 -- MiniPick
 vim.keymap.set("n", "<leader>ff", function() MiniPick.builtin.files() end, { desc = "Find files" })
