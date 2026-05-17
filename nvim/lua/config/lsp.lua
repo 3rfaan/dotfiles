@@ -1,7 +1,3 @@
-vim.diagnostic.config({
-  virtual_text = true,
-})
-
 vim.lsp.config("oxfmt", {
   workspace_required = false,
 })
