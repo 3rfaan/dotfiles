@@ -18,7 +18,8 @@ vim.opt.sidescrolloff = 10
 -- Text
 vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
-vim.opt.wrap = false
+vim.opt.spell = false
+vim.opt.wrap = true
 
 -- Column
 vim.opt.colorcolumn = "100"

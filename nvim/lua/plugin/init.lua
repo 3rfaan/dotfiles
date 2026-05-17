@@ -21,10 +21,14 @@ vim.pack.add({
 })
 
 require("plugin.auto-dark-mode")
-require("plugin.miniclue")
 require("plugin.nightfox")
 
-require("mini.diff").setup({ view = { style = "sign" } })
+require("plugin.mini.clue")
+require("plugin.mini.diff")
+
+-- Setups
+require("lazydev").setup()
+
 require("mini.files").setup()
 require("mini.git").setup()
 require("mini.icons").setup()
@@ -33,5 +37,3 @@ require("mini.pick").setup()
 require("mini.snippets").setup()
 require("mini.statusline").setup()
 require("mini.surround").setup()
-
-require("lazydev").setup()

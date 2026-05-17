@@ -3,6 +3,15 @@ vim.keymap.set("n", "<Esc>", vim.cmd.nohlsearch, { desc = "Clear search highligh
 
 -- Diagnostics
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic message" })
+vim.keymap.set("n", "<leader>td", function()
+  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+end, { desc = "Toggle diagnostics" }
+)
+
+-- Inline hints
+vim.keymap.set("n", "<leader>th", function()
+  vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+end, { desc = "Toggle inline hints" })
 
 -- Focus windows
 vim.keymap.set("n", "<leader>h", "<C-w><C-h>", { desc = "Move focus to the left window" })
@@ -19,7 +28,8 @@ vim.keymap.set("i", "<CR>", function()
   local info = vim.fn.complete_info({ "selected" })
 
   if info.selected ~= -1 then return "<C-y>" end
-  return MiniPairs.cr()
+  if MiniPairs then return MiniPairs.cr() end
+  return "<CR>"
 end, { expr = true })
 
 -- Undotree
@@ -31,7 +41,7 @@ end, { desc = "Open Undotree" })
 vim.keymap.set("n", "<leader>-", function() MiniFiles.open() end, { desc = "Open MiniFiles" })
 
 -- MiniDiff
-vim.keymap.set("n", "<leader>d", function() MiniDiff.toggle_overlay() end, { desc = "Show diff details" })
+vim.keymap.set("n", "<leader>md", function() MiniDiff.toggle_overlay() end, { desc = "Show diff details" })
 
 -- MiniPick
 vim.keymap.set("n", "<leader>ff", function() MiniPick.builtin.files() end, { desc = "Find files" })
