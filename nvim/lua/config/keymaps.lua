@@ -13,6 +13,11 @@ vim.keymap.set("n", "<leader>th", function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 end, { desc = "Toggle inline hints" })
 
+-- Wrap
+vim.keymap.set("n", "<leader>tw", function()
+  vim.wo.wrap = not vim.wo.wrap
+end, { desc = "Toggle wrap" })
+
 -- Focus windows
 vim.keymap.set("n", "<leader>h", "<C-w><C-h>", { desc = "Move focus to the left window" })
 vim.keymap.set("n", "<leader>l", "<C-w><C-l>", { desc = "Move focus to the right window" })

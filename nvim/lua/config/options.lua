@@ -16,6 +16,7 @@ vim.opt.scrolloff = 10
 vim.opt.sidescrolloff = 10
 
 -- Text
+vim.opt.linebreak = true
 vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 vim.opt.spell = false
@@ -48,9 +49,16 @@ vim.opt.autocomplete = true
 vim.opt.complete:append("o") -- append omnifunc
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
+-- Floats
+vim.opt.winborder = "rounded"
+
 -- Pum
-vim.opt.pumblend = 15
+vim.opt.pumborder = "rounded"
 vim.opt.pumheight = 10
+
+-- Splits
+vim.opt.splitbelow = true
+vim.opt.splitright = true
 
 -- History
 vim.opt.history = 1000
