@@ -1,6 +1,6 @@
 -- Builtin plugins
-vim.cmd("packadd nvim.undotree")
-vim.cmd("packadd nvim.difftool")
+vim.cmd.packadd("nvim.undotree")
+vim.cmd.packadd("nvim.difftool")
 
 -- External plugins
 vim.pack.add({
