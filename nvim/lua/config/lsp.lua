@@ -9,11 +9,11 @@ vim.lsp.config("oxlint", {
 vim.lsp.enable({
   "clangd",
   "emmet_language_server",
+  "fish_lsp",
   "lua_ls",
   "oxfmt",
   "oxlint",
   "rust_analyzer",
-  "svelte",
   "ts_ls",
   "vimdoc_ls",
 })
