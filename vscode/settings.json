@@ -1,15 +1,16 @@
 {
   "editor.fontSize": 16,
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Iosevka Nerd Font', 'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontWeight": 600,
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
+    "editor.defaultFormatter": "svelte.svelte-vscode",
   },
   "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
+    "editor.defaultFormatter": "Prisma.prisma",
   },
 
   "editor.mouseWheelZoom": true,
@@ -20,6 +21,7 @@
   "editor.lineNumbers": "relative",
 
   "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontWeight": 600,
   "terminal.integrated.mouseWheelZoom": true,
   "terminal.integrated.stickyScroll.enabled": false,
   "terminal.integrated.initialHint": false,
@@ -32,5 +34,5 @@
   "workbench.iconTheme": "file-icons",
 
   "vim.useSystemClipboard": true,
-  "svelte.enable-ts-plugin": true
+  "svelte.enable-ts-plugin": true,
 }
