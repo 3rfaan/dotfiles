@@ -1,11 +1,13 @@
 {
-  "editor.fontSize": 16,
-  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Iosevka Nerd Font', 'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontWeight": 600,
+  "editor.inlayHints.enabled": "on",
 
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Iosevka Nerd Font', 'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
+  "editor.fontWeight": 700,
+
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode",
   },
@@ -21,7 +23,7 @@
   "editor.lineNumbers": "relative",
 
   "terminal.integrated.fontSize": 15,
-  "terminal.integrated.fontWeight": 600,
+  "terminal.integrated.fontWeight": 700,
   "terminal.integrated.mouseWheelZoom": true,
   "terminal.integrated.stickyScroll.enabled": false,
   "terminal.integrated.initialHint": false,
