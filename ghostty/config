@@ -11,11 +11,15 @@ background-blur = true
 
 # Font
 font-family = JetBrainsMono Nerd Font
+# font-family = More Perfect DOS VGA
 # font-family = CaskaydiaCove Nerd Font 
 # font-family = Iosevka Nerd Font
 
-font-size = 20
+font-size = 18
 font-style = SemiBold
+
+# font-synthetic-style = false
+# freetype-load-flags = monochrome
 
 # Mouse
 mouse-hide-while-typing
