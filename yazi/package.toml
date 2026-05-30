@@ -1,0 +1,7 @@
+[[plugin.deps]]
+use = "stelcodes/bunny"
+rev = "71b14a3"
+hash = "18a2829738214fe9bca99a2fef19113d"
+
+[flavor]
+deps = []
