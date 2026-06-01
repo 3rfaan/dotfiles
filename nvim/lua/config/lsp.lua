@@ -16,4 +16,5 @@ vim.lsp.enable({
   "rust_analyzer",
   "ts_ls",
   "vimdoc_ls",
+  "zls"
 })

@@ -38,7 +38,6 @@ vim.opt.incsearch = true
 vim.opt.showmatch = true
 vim.opt.smartcase = true
 
-
 -- Indentation
 vim.opt.autoindent = true
 vim.opt.breakindent = true
